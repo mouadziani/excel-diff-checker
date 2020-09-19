@@ -22,7 +22,7 @@ def clean_case(item):
 def save_array_as_doc_file(file_name, array):
     doc = docx.Document()
     doc.add_paragraph('================================================================================')
-    doc.add_paragraph('=================== Detect difference between 2 CSV Files ======================')
+    doc.add_paragraph('=========================== Excel diff checker V1 ==============================')
     doc.add_paragraph('================================================================================')
     for line in array:
         doc.add_paragraph(str(line))
@@ -57,7 +57,7 @@ def check_difference(array_1, array_2):
         save_array_as_doc_file('result_diff.docx', outpu_messages)
 
 print('\n================================================================================')
-print('=================== Detect difference between 2 CSV Files ======================')
+print('=========================== Excel diff checker V1 ==============================')
 print('================================================================================\n')
 data_file_1 = load_data_from_csv('file_1.csv')
 data_file_2 = load_data_from_csv('file_2.csv')
